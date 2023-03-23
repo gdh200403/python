@@ -21,3 +21,4 @@ def pascal_triangle(i, j):
 print(pascal_triangle(4, 3))
 
 print("hello again!")
+print("hello twice!")
