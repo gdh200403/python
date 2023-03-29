@@ -52,7 +52,7 @@ def check_answer(answer, uanswer):
 
 
 import time
-# 生成题目省略，不再重复给出
+import sys
 
 def print_sleep (content, sleepseconds=4):
     print(content)
@@ -73,10 +73,12 @@ def prefix():
     print_sleep('今天,我特地来找你玩儿！',2)
     print_sleep('因为，我想和你交朋友！')
     print('如果你愿意和我交朋友，请和我打个招呼吧！')
+    sys.stdout.flush()
     input()
     print_sleep('嗨，很高兴和你交朋友！')
     print_sleep('瞧，我的加减乘除那几个小伙伴也来了，他们也想和你交朋友呢！')
     print('如果你愿意和他们交朋友，请和他们也打个招呼吧！')
+    sys.stdout.flush()
     input()
     print_sleep('嗨，他们说很高兴和你交朋友！')
     print_sleep('那么，聪明的你，请勇敢接受我们的挑战吧！')
@@ -142,7 +144,7 @@ while True:
             score-=1
         
         if mode != "挑战模式":  # 如果不是挑战模式，则显示得分
-            print(f"当前得分：{score}")
+            print(f"当前得分：{score}\n")
             
     # 结束计时
     end_time = time.perf_counter()
