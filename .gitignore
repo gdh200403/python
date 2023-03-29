@@ -1,1 +1,12 @@
 *.jpg
+*.zip
+*.pkg
+*.pyc
+*.toc
+*.html
+*.exe
+*.pyz
+*.spec
+*.txt
+*.manifest
+小学生数学运算器/main_pxy.py

@@ -59,17 +59,17 @@ def print_sleep (content, sleepseconds=4):
     time.sleep(sleepseconds)
 
 def prefix():
-    print_sleep('\n郭xx小朋友，你好！')
+    print_sleep('\n潘徐瑶小朋友，你好！')
     print_sleep('欢迎你来到数学的世界！')
     print_sleep('我是数学王国的一个小小计算器')
     print_sleep('加法、减法、乘法、除法都是我的好朋友！')
     print_sleep('今天我带着他们一起，跨过了千山万水到来到了这台电脑旅游！\n')
     print_sleep('你们人类真是聪明，竟然发明了电脑这个神奇的东西~')
-    print_sleep('我想坐在这台电脑前的你，一定也是个聪明的小孩儿吧！\n')
+    print_sleep('我想坐在这台电脑前的你，一定也是个聪明的小朋友吧！\n')
     print_sleep('不过，我要告诉你',2)
     print_sleep('没有我们数学王国的朋友们',2)
     print_sleep('你们人类再聪明也造不出电脑呢')
-    print_sleep('好啦，有关我们数学和电脑的关系，以后再和你说\n')
+    print_sleep('好啦，有关我们数学王国和电脑的秘密，以后再和你说\n')
     print_sleep('今天,我特地来找你玩儿！',2)
     print_sleep('因为，我想和你交朋友！')
     print('如果你愿意和我交朋友，请和我打个招呼吧！')
@@ -90,10 +90,10 @@ def prefix():
     time.sleep(1)
     print('t')
     time.sleep(1)
-    print_sleep('这是一个英文单词，意思是退出，输入它就可以结束我们的游戏！')
+    print_sleep('这是一个英文单词，意思是退出，输入它就可以结束我们的游戏！我和我的四个小伙伴会一起算出你的游戏表现！')
     print_sleep('好啦！游戏开始！')
 
-a = input('这是我们第一次见面吗？\n是请按1，不是请按0:')
+a = input('嗨，潘徐瑶小朋友，这是我们第一次见面吗？\n是请按1，不是请按0:')
 if(int(a)):
     prefix()
 else:
@@ -150,7 +150,7 @@ while True:
     total_questions-=1
     accuracy = correct_questions / total_questions if total_questions > 0 else 0
     # 打印统计信息
-    print(f"\n郭xx小朋友，本次你共做了{total_questions}道题")
+    print(f"\n潘徐瑶小朋友，本次你共做了{total_questions}道题")
     print(f"做对了{correct_questions}道题")
     print(f"你的得分是：{score}")
     print(f"正确率为{accuracy:.0%}")
