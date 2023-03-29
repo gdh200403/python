@@ -117,9 +117,7 @@ while True:
     while True:
         # 生成题目
         question, answer, mode = generate_question(mode)
-        
-        # 统计总题数
-        total_questions += 1
+
         
         # 提示用户输入答案
         user_answer = input(question)
@@ -142,14 +140,16 @@ while True:
             print("回答错误！再加把劲！")
             print('正确答案应该是:',answer)
             score-=1
-        
+                
+        # 统计总题数
+        total_questions += 1
+
         if mode != "挑战模式":  # 如果不是挑战模式，则显示得分
             print(f"当前得分：{score}\n")
             
     # 结束计时
     end_time = time.perf_counter()
     # 统计答题情况
-    total_questions-=1
     accuracy = correct_questions / total_questions if total_questions > 0 else 0
     # 打印统计信息
     print(f"\n郭xx小朋友，本次你共做了{total_questions}道题")
