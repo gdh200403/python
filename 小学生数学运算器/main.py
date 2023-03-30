@@ -110,7 +110,7 @@ def prefix():
 
 
 colorama.init()
-print(colorama.Style.BRIGHT)
+print(colorama.Style.BRIGHT,colorama.Back.BLACK)
 a = input('嗨，郭钰涵小朋友，这是我们第一次见面吗？\n是请按1，不是请按0:\n')
 if(int(a)):
     prefix()
